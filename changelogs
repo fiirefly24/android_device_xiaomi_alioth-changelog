@@ -1,0 +1,350 @@
+Credits:
+-@LineageOS
+-@johnmart19
+-@drkphnx
+and all the authors for these commits that i picked
+-@utsavBalar1231 for base kernel
+
+Changelogs :
+
+<-- 202303XX-XXXX --> 
+
+8d2cf80 alioth: Parts: Thermal Utils: Default config - Evaluation (10)
+dcfef5a alioth: parts: Avoid unsafe boot completed receiver
+fda01ef alioth: parts: Use S theme in thermal and refresh rate settings
+0ff06a9 alioth: parts: Add touch profiles for gaming and benchmarking
+5a78313 alioth: parts: Implement SeekBarPreference
+9d679ed alioth: parts: Rework DC Dimming Implementation [Non-FOD]
+3035fb3 alioth: parts: Implement DC Dimming support
+8b4d463 alioth: parts: Declare exported flags in manifest for SDK 32
+c4bfcce alioth: parts: Adapt Clear Speakers to S style
+90aee78 alioth: parts: Add icon for Clear Speaker
+805208b alioth: parts: Fix Clear Speaker IllegalStateException * trace:   E AndroidRuntime: java.lang.IllegalStateException   E AndroidRuntime: at android.media.MediaPlayer._stop(Native Method)   E AndroidRuntime: at android.media.MediaPlayer.stop(MediaPlayer.java:1397)
+d510ac8 alioth: parts: Add headphones warning for clear speaker
+8ee313f alioth: parts: Update clear speaker audio from MIUI 12
+5dce0cb alioth: parts: Implement Clear Speaker
+51beba0 Revert "alioth: Adjust Statusbar Clock padding"
+d224600 Revert "alioth: Add support of Miui Dolby and MiSound"
+0aa6c43 alioth: Kang IMS apk from renoir
+a52c501 alioth: Import Xiaomi TouchFeature service
+dc52701 alioth: Add support of Miui Dolby and MiSound
+4097201 alioth: Import missing audio prebuilts
+37db6e6 alioth: CDSP: Import additionally libcdsprpc_system libs
+3176291 alioth: Import 32bit adsp/cdsp default listener libs
+1234eef alioth: Import GPS lowi.conf to DT & disable debugging
+d8b8410 alioth: Enable VoNR Calls support
+eaa31ed alioth: Grant to create qipcrtr_socket for QXDM logging
+9db3267 alioth: parts: Avoid unsafe boot completed receiver
+b7d5821 alioth: Use FUSE passthrough mode by default
+c60a129 alioth: CarrierConfig: Enable VoLTE for Beeline
+f1f752a alioth: CarrierConfig: Enable VoLTE and Wi-Fi calling for Telcel
+0c16912 alioth: overlay: Only allow 5G SA on Jio
+3120d2e alioth: overlay: disable IMS features for TIM Brazil - unsupported by carrier, leads to high modem drain
+e072e7d alioth: overlay: Allow VoLTE and VoWiFi/WFC by default
+5bbbf2e alioth: Don't force enable ims features
+c3974b1 alioth: Import missing IMS Rtp service lib
+c4c5232 alioth: SDM: Import missing libdpps.so
+3121bcf alioth: Use Kryo785 Optimization
+21c183e alioth: Use armv8-2a for 2nd arch variant
+1e60f62 alioth: Force device to treat 170M as sRGB in SF
+884cd66 alioth: Sepolicy: Address additional citsensorservice denials
+3973ff7 alioth: audio: Don't advertise vorbis offloading support
+24d46ad alioth: Improve haptic and vibe patterns
+64cc066 alioth: remove stereo channel mask from voip rx
+49d6f7a alioth: props: Disable QTI perf lock usage in camera HAL
+53f03ac alioth: rootdir: Allow all filesystems for USB-OTG
+31c027e alioth: Adjust Statusbar Clock padding
+fc91c4e alioth: overlays: Push 120 FPS for ScreenRecorder Our Device is with 120hz display and Snapdragon 870, there is no reason to lock on 60fps
+177d42b alioth: Initialize High Touch Polling Rate support
+fae0530 alioth: Add touch improvements sysprops
+fb9d518 alioth: Tune powerhint
+9e76806 alioth: powerhint: limited the dex2oat resouce when thermal stress
+f0789d0 alioth: powerhint: set /dev/cpu_dma_latency value in hex
+4a7f722 alioth: Decrease launch boost to 3sec
+ff96fd3 alioth: prop: Fix screen recorder lag
+904e088 alioth: Disable debug.sf.enable_hwc_vds
+57e88ac alioth: audio: Drop FM tuner
+d198f94 alioth: Unset TEQUILA_BUILDTYPE
+
+<-- 20230225-0822 -->
+
+dcf561e alioth: sepolicy: Give QCOM TEE directory access to tmpfs
+3349f71 alioth: sepolicy : Label missing wakeup denials
+f728fd1 alioth: Address some Selinux Denials
+f1a8c14 alioth: Ultrasound sensor fixes
+3048841 alioth: sepolicy: allow parts to get SettingsLib prop
+714a69f alioth:  [squash] : Implement HBM & Auto HBM
+
+<-- 20230211-0447 -->
+
+bd8a162 alioth: Aperture: Unlock additional camera framerates
+c009526 alioth: Ship Aperture
+9ce9d65 alioth: Add xiaomi cit sensor service
+e0ee537 alioth: CarrierConfig: enable IMS features supported by DITO
+910df57 alioth: overlay: update CarrierConfig from 13.0.6.0.SKHMIXM
+5b0d8ab alioth: Import MIUI CarrierConfig changes
+8444c2c alioth: import CarrierConfig from QSSI
+
+<-- 20230123-0530 -->
+
+1f6ff17 alioth: Use DMIC instead of UNPROCESSED for recorder
+12d016a alioth: audio: Define acdb ids for voice recorder
+3a517b0 alioth: update gboard paddings from pixel7
+1bad785 alioth: apply sfps overlay to fingerprint_edu_lottie_landscape_top_right
+91afcf8 alioth: import fingerprint lottie animations for DSU
+cd180f6 alioth: overlay: update rounded corner adjustment
+05351b0 alioth: overlay: sync brightness configs with MIUI
+2c373bb alioth: overlay: update punch-hole cutout
+993cb9c Migrate "rounded_corner_content_padding" for alioth
+d52d571 alioth: overlay: Remove redundent status_bar_height overlay
+df096f2 alioth: Add displayconfig and vpp tunings from MIUI
+67f5c34 alioth: overlay: fix statusbar heights on sv2
+7c742cf alioth: Register fingerprint authenticator in overlays.
+5eb94e5 alioth: overlay: import fingerprint configuration
+963cb64 alioth: overlay: Configure device layout specific overlays
+5d4dfbf alioth: overlay: Configure auto brightness overlays
+67dad3d alioth: overlay: Configure display cutout overlay
+aefbb89 alioth: overlay: Create power profile for xiaomi SM8250-AC
+49d78dc Alioth: Import AOSPA Trees Power Profile
+a943ffe Alioth: Power Profile: Drop Lineage Trees Power Profile
+9ec5e3c Alioth: Overlays: Duplicate "rounded_corner_content_padding"
+8a1f323 Alioth: Add burn-in protection for statusbar and navbar
+0277bdb  alioth: overlay: Configure display cutout
+dfef3ce Alioth: props: Media Volume Steps: 16
+c0e54d5 Alioth: Libinit: Add support of .mod_device hides
+2f91e3a Alioth: Overlays: Configure refresh rate settings
+4134467 alioth: init: Set media XML codecs variant to _kona
+feed86f alioth: Enable SSR for all subsytem types
+723e393 alioth: Rewrite MSADP policies
+211ef21 alioth: audio: fixup audio io policy voip_rx flags
+2de6f3d alioth: Props: Disable fm in btconfigstore
+7f3915e alioth: sepolicy: Provide sysfs access for batterysecret
+2521304 alioth: overlay: Fix fingerprint wake-up animation
+b163084 alioth: overlay: Update CarrierConfig from LA.QSSI.13.0.r1-07400-qssi.0
+a5dee34 alioth: Props: Import Blur props from Miui
+0df8a24 alioth: parts: Set correct default icon to per-app refresh rate
+0c31225 alioth: parts: Set default refresh rate to 120Hz
+d7c49f8 alioth: parts: Fix app mode layout height for Android 13
+9966fb2 alioth: sepolicy: update graphics_composer rules
+e2ec21c alioth: Post_boot: Disable Input boost for Kona | And General one also
+2db69e4 alioth: Props: Disable QCRIL power saving
+70978c6 alioth: Sepolicy: Initial dontaudit rules
+b9b09d6 alioth: libinit: Add support of .mod_device hides
+f70dbbf alioth: Public libraries: Update from Miui Alioth 13.0.6.0 Mi
+3b162bb alioth: Provide Sepolicy and overlays for FPS Counter access
+ec529b9 alioth: Audio: Compile Audio Alsa & Debugging Extensions
+ad8c351 alioth: Refresh Rate: Configure props and allow overwrites
+20ee75c alioth: Default network type: 5G (NR)
+aa107c3 alioth: Label idle_state sysfs nodes
+e875f5a alioth: Strip off some debug packages
+f357d3c alioth: rootdir: Remove CAF input boost
+0a93813 alioth: sepolicy: Address telephony denials
+35d197e alioth: sepolicy: Address batterysecret denial
+9f2a536 alioth: Props: Switch to AutoSingleLayer Android 13 Setting
+6d9287b alioth: init_qcom.rc: Set permission to access panel boot param node
+fff5f7a alioth: init: Remove racey printk setups
+26705d9 alioth: init.qcom.rc: Create data vendor folder for NFC
+78f88b8 alioth: init: qcom: Move auto PIL for CVP to post boot_completed
+7c28520 alioth: props: Kill IMS logspam with fire
+438ef2e alioth: props: Disable Skia tracing by default
+0b5de00 alioth: LMK Props: Force disable low ram config
+2dcd82a alioth: Move DPM feature property to /system_ext
+9557403 alioth: Enable DPM Connection Tracking (CT)
+2585882 alioth: props: Disable vsync for CPU rendered Apps
+7070db5 alioth: props: Enable Miui Notch overlay
+674e052 alioth: sepolicy: Label some RIL property
+a99647a alioth: Rootdir: Disable vendor_modprobe commands
+8fe6a15 alioth: init: Remove code for starting legacy ril
+cb32805 alioth: Enable asynchronous library events in WPA supplicant
+8503732 alioth: init: Fix "Invalid section keyword found" on ueventd
+a2d0dca alioth: init: Remove unnecessary QTI logkit directories
+3b187a8 alioth: init: Disable QCOM system daemon
+a87ec03 alioth: Suppress warning related to NNAPI HAL accessing zeroth.debuglog.logmask
+226eeb1 alioth: rootdir: Remove IO read_ahead_kb tune
+95f5732 alioth: overlay: Don't pin camera app in memory
+41acf50 alioth: Powerhint: Fix cpu_dma_latency value
+532d883 alioth: Sepolicy: Address Serial Number RIL denial
+ac835fe alioth: Sepolicy: Remove bluetooth.a2dp_offload_cap property
+0a5fa1c alioth: sepolicy: Allow system_app to access zram sysfs nodes
+bdd26bb alioth: Sepolicy: Declare vendor bluetooth prop
+ea450ec alioth: Sepolicy: Update Ultrasound sepolicy
+58875b4 alioth: Sepolicy: fingerprint_data_file -> vendor_fingerprint_data_file
+1274a4f alioth: sepolicy: Allow init to write discard_max_bytes on /data partition
+a3be7c6 alioth: sepolicy: Allow setting read_ahead_kb on /data partition
+05d558e alioth: fstab: set readahead_size_kb=128 to data This can avoid memory pressure.
+bd69e41 alioth: Import more Video Calls related props
+779169e alioth: sepolicy: Allow init.qcom.usb.sh to create files in uvc.0 dir
+54acf8e alioth: Disable redir_party_num
+3b4d596 alioth: sepolicy: Fix some power supply related SELinux denials
+2cd8d8d alioth: fstab A-Only: Drop wrappedkey_v0 flag
+7fdb64c alioth: fstab A-Only: Remove wrappedkey flag from metadata
+0c7005c alioth: fstab A-Only: Switch to AES-256/FBEv2 encryption for A-only
+1f84246 alioth: sepolicy: Label xiaomi modem boot devices
+843cc04 alioth: sepolicy: Label qcom extcon sysfs
+e1714fd alioth: sepolicy: Allow vendor init to set SSR property
+3c46ced alioth: parts: Add missing proguard.flags
+3d7fdd5 alioth: parts: Use directBootAware
+ff20a40 alioth: parts: Thermal Profiles and Per-app refresh rate improvements
+111aa73 alioth: parts: Target current sdk
+0118ff0 alioth: parts: Declare exported flags in manifest for SDK 32
+cdadd24 alioth: parts: BootCompletedReceiver: import IntentFilter
+79ed147 alioth: parts: Increase BootCompletedReceiver priority  * set the priority to SYSTEM_HIGH_PRIORITY to match other system services    so our settings are restored faster on bootup
+c57241d alioth: parts: RefreshRateTile: Wire-up preferred refresh-rate value too
+7bfccdb alioth: parts: Refresh rate's app list improvement
+bb0c58c alioth: parts: Improve per-app refresh rate activity
+9b00945 alioth: parts: Simplify per-app refresh rate strings
+4df1820 alioth: parts: Update some icons [1] - Per app refresh rate icons
+6e66ed7 alioth: parts: Add per app maximum refresh rate
+9cb9f2c alioth: parts:  import doze icons from PixelDoze
+6378a39 alioth: parts: Introduce raise to wake gesture
+043db12 alioth: parts: Allow to wake the screen instead of pulsing
+4b2b3ed alioth: parts: Fix up formatting in QS tile
+93964e5 alioth: parts: Introduce Refresh Rate QS tile
+abb2079 alioth: parts: Inject doze preference through ia
+ef84982 alioth: parts: Fix missing ambient display string
+0a091ac alioth: parts: Make HelpDialogFragment class public
+d235f8e alioth: Use nqnfcinfo to set chip ID and firmware version
+382dd42 alioth: Update to Boot Control HAL v1.2
+5aedb41 alioth: gpt-utils: Do fsync after writing partition entries
+1468af3 alioth: wifi: Remove TxPower2g and 5g
+2a040e4 alioth: wifi: Switch gEnablePowerSaveOffload to 5
+c5b3ff8 alioth: wifi: Smarter decisions on whether to use 2/5Ghz AP
+5ab1409 alioth: wifi: Increase max bss count
+a3e3736 alioth: wifi: Remove entry for gEnableNUDTracking
+3c5b11f alioth: wifi: Disable TDLS offchannel
+5f05c8c alioth: wifi: No BSS flush for 2018 devices Bug: 73301881 Test: Verify that the connected MAC randomization ~3 seconds delay problem is gone
+36b3992 alioth: Enable support for IEEE80211AX
+be55c91 alioth: Enable support for IEEE80211AC
+791b14c alioth: Enable automatic channel selection
+899b336 alioth: rro_overlays: Enable wifi 6GHz band
+1abf852 alioth: wifi: Relax WiFi re-association RSSI thresholds
+7ef7576 alioth: wifi: Enable QPower and Deep sleep at the same time
+516bc78 alioth: wifi: Disable RX wakelock feature
+81b4257 alioth: Guard qti thermal 2.0 service hals
+c5c16ec alioth: Google Hotword: Update Hotword permissions
+511b848 alioth: libstagefright: Build also softomx and foundation versions
+94b17ab alioth: Parts: Remove entirely Popup Camera
+d928cb9 alioth: sepolicy: Remove duplicate wakeup nodes
+8ece45c Alioth: Proprietary files: Update unpinned blobs information
+d71f147 Alioth: Audio Libs: Sync with Miui 14.0.7.0 EU
+1f6bec8 Alioth: SensorsConfigs: Sync with Miui 14.0.7.0 EU
+7d2dca2 Alioth: Import all Display Calibation configs
+64469c6 Alioth: audio: Add missing voice-headset path
+c39fb3b Alioth: Audio: Import Audio Policy Engine Configurations from Miui 14.0.7.0 EU
+d09d77f Alioth: Audio: Import more configurations from Miui 14.0.7.0 EU
+42e3e08 alioth: Update audio configs from Miui Alioth 13.0.9.0 EU
+0e77e4d Revert "alioth: Move ACDB calibration files to Tutu"
+
+<--  20230112-1431 -->
+
+2babf1d alioth: Time for tequila!
+bbba4d9 alioth : decommonized
+6aed9f9 alioth: Commonize AOSP colors, HDR and WCG props
+569fd4e alioth: overlay: update rounded corner adjustment
+d9a11f7 alioth: Include alioth config fragment
+35aadb0 alioth: Update blobs from V13.0.6.0.SKHMIXM
+32877d2 alioth: overlay-lineage: Configure aux camera for Aperture
+d4d7c3c alioth: Add libpiex_shim for com.mi.node.watermark.so
+a020873 alioth: overlay: update rounded corners for T
+004e4a0 alioth: overlay: Power profile audio & video support
+9c12462 alioth: overlay: Set BT controller voltage in the power profile
+ce1170f alioth: Migrate "rounded_corner_content_padding"
+d776b07 alioth: Add missing adsp blobs from stock
+c36f82e alioth: Update overlays from stock
+6b4e6b4 alioth: Use certified fingerprint for each region.
+4797a3c alioth:  Drop overriding build description
+9e6869e alioth: Move ACDB calibration files to Tutu
+880c841 alioth: Decommonize NFC configs and firmware
+a3fc541 alioth: Decommonize IPA and charger blobs
+0161d90 alioth: Fix AAPT config
+d36eb4b alioth: Add copyright header to Android.bp
+e441a92 alioth: Reorder device.mk
+f2b58f9 Revert "alioth: Enable TARGET_ENABLE_AUDIO_ULL"
+e88bbd4 Revert "alioth: set config_haveNotch overlay to true"
+fe27cb4 alioth: Fixed status bar glitch for apps that access internal resource dimen
+32e4eba alioth: overlay: Update deprecated screen power items
+0225884 alioth: provide support for callscreening for kona/lito.
+a9dbb79 alioth: Update blobs to V13.0.3.0.SKHMIXM
+86a3a12 alioth: camera: Use randomly generated config
+77fe105 alioth: Update to Android 12 blobs
+990f8a8 alioth: Sync audio configs from MIUI V12.5.6.0
+7b1d155 alioth: Update blobs from V12.5.6.0.RKHMIXM
+ed0d21d alioth: Drop 32-bit sensors libs
+3f59757 alioth: Drop camera fonts
+dd4d234 alioth: Drop 32-bit camera libs
+cbb63f6 alioth: Drop 64-bit audio libs
+47ff122 alioth: Patch vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+cc33ac6 alioth: overlay: update corner radius from stock
+4f3f7ed alioth: Remove resource overlays for system bar heights
+1c0c87b alioth: overlays: align side fps ripple animation
+847537c alioth: overlays: set physical location of side fps
+318ee36 alioth: overlays: set fingerprint sensor location
+836c8ea alioth: Update blobs from V12.5.4.0.RKHMIXM
+8421299 alioth: Drop proto sensors configs
+f36a8f0 alioth: Drop 64-bit ADSP modules
+c9f0287 alioth: Remove unused system camera libs
+6b74229 alioth: Drop non-QDCM display configs
+5e64916 alioth: Remove unused vibrator firmware
+b2a814b alioth: Commonize OMX blobs
+1f7a813 alioth: Commonize A/B stuff
+47ded4a alioth: Use find-copy-subdir-files for audio configs
+dde657f alioth: Reorder device.mk
+5a07cda alioth: Move common product inclusion to the top
+c7cbabd alioth: overlay: enable burn-in protection
+65deab7 alioth: Disable proximity usage during doze
+be71670 alioth: fix statubar icon padding
+0cd23ab alioth: Add front-facing camera protection
+f17d1e5 alioth: Add correct config_mainBuiltInDisplayCutout
+1cfc9fc alioth: Disable proximity sensor check for dialer's answer UI
+cd8e2be alioth: Enable TARGET_ENABLE_AUDIO_ULL
+efeafad alioth: Remove soundfx and acdb libraries
+639ffc5 alioth: provide support for callscreening for kona/lito.
+1ff0a5d alioth: Put elliptic_sensor.xml in sensors config section
+3c087f1 alioth: Put camera configs in proper place
+3a38b43 alioth: Remove duplicated camera components from blobs list
+62b6068 alioth: audio: Sync audio configs from MIUI 21.9.12
+95c3ab6 alioth: overlay: Don't check proximity sensor before pulsing
+64e5ca6 alioth: Reorder blobs
+6c2aae7 alioth: Add a script to reorder blobs list
+54213c4 alioth: Update blobs from V12.5.3.0.RKHMIXM
+61bfaef alioth: add prorietary file capi_v2_dap_cpdp.so
+7325e0e alioth: props: add display panel related prop
+c7ddea2 alioth: props: add display fps deferral
+1fc22a1 alioth: libinit: Adapt to latest changes
+ba81d26 alioth: overlay: Set default Peak RefreshRate to 60
+b76d2e2 alioth: overlay: Remove default Peak RefreshRate
+0178804 alioth: Decommonize HotwordEnrollment
+e166382 alioth: gpt-utils: Add OTA support for below partition 1. featenabler 2. multiimgoem
+11f99f6 alioth: gpt-utils: fsync after block device writes
+161cb2f alioth: set config_haveNotch overlay to true
+750ef00 alioth: overlay-lineage: Switch to min_refresh_rate setting
+52fdc52 alioth: Revert surfaceflinger content based refresh rate
+7308c51 Revert "alioth: Enable TARGET_ENABLE_AUDIO_ULL"
+3b8ae42 alioth: audio: Update platform info from CAF
+68f621f alioth: audio: Import missing mixer_paths_overlay_dynamic from stock
+0321bb1 alioth: audio: Remove duplicate mixer paths
+4a42ff6 alioth: audio: Fix small typo in mixer_paths_overlay_static.xml
+bc942a3 alioth: Set surfaceflinger refresh rate timers
+e22fdc5 alioth: Switch to surfaceflinger content detection API
+8d9da45 alioth: Add HDR and AOSP color props
+88cfc1b alioth: Enable refresh rate toggle in Settings
+09a3628 alioth: overlay: Set config_defaultRefreshRate to 0
+4993b8f alioth: overlay-lineage: Set proper fingerprint sensor location
+3937e48 alioth: Enable TARGET_ENABLE_AUDIO_ULL
+f4a2ea5 alioth: Set Dalvik heap props on boot
+7499007 alioth: Decommonize device-specific audio props
+7d24222 alioth: Commonize aptX ADSP blobs
+7d75909 alioth: overlay: Use 52px rounded corner padding
+9679d60 alioth: remove duplicate flag
+4e89917 alioth: Import vibrator firmware
+f2a7293 alioth: Add OTA assert to support both variants
+0650979 alioth: Add libinit for variants handling
+266867e alioth: Mark as having overridden commands
+44c06ed alioth: Import bootctrl and gpt_utils hal
+d1e3ef5 alioth: Use Soong namespace to avoid device build conflicts
+fb93cf0 alioth: Import device-specific audio configs
+1795418 alioth: Initial list of proprietary blobs
+42cecb6 alioth: Import Lineage's common extract_utils
+0cad158 alioth: overlay: Import stock power profile
+551b1bb alioth: Import stock overlays
+2994b3a alioth: Initial device tree
