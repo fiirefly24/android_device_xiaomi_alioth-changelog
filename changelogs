@@ -8,7 +8,9 @@ and all the authors for these commits that i picked
 Changelogs :
 
 <-- 202303XX-XXXX --> 
-
+4b745dc alioth: Import Dolby Config
+b96c846 alioth: Import DaxUI (Dolby UI) from OnePlus - This is minimal Application with permissions to existing Dolby Engine, select profiles on it and use as AOSP default EQ - Includes "Update DaxUI to show as equalizer in some musicplayer apps" - Imported at commit - Project-Zephyrus/android_device_oneplus_sm8250-common@f074cd4 - Remove Permissions from import according to VoidUI-Devices/device_xiaomi_sm8250-common@e21af1b
+9952acc alioth: Enable Dolby Support and Import needed libs
 8d2cf80 alioth: Parts: Thermal Utils: Default config - Evaluation (10)
 dcfef5a alioth: parts: Avoid unsafe boot completed receiver
 fda01ef alioth: parts: Use S theme in thermal and refresh rate settings
